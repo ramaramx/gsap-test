@@ -43,7 +43,7 @@ display: flex;
   left: 3vw;
   bottom: 0;
   transform-origin: left top;
-  z-index: 3;
+  z-index: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -122,7 +122,7 @@ display: flex;
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (max-width: 425px) {.video-background  {
     flex: 1;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -133,7 +133,7 @@ display: flex;
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {.video-background  {
     flex: 1;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -148,7 +148,7 @@ display: flex;
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (max-width: 992px) {.video-background  {
     flex: 1;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -259,7 +259,7 @@ display: flex;
     display: block;
     box-sizing: initial;
     overflow: hidden;
-    z-index: 9;
+    
     border-radius: 50%;
     transform: translate(-50%, -50%);
     animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
@@ -274,7 +274,6 @@ display: flex;
     top: 50%;
     overflow: hidden;
     opacity: 0;
-    z-index: 9;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
