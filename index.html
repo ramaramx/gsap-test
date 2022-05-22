@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="style.css">
     
     
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
 
 </head>
 <body>
-  
+  <!-- splash screen -->
+ 
 <!-- 3D GSAP SCROLL -->
-      
+   
 <video src="bg.mp4" playsinline="true" webkit-playsinline="true" preload="auto" muted="none" class="video-background"></video>
-
+<div class="welcome">
+  <span id="splash-overlay" class="splash"> </span>
+  <span id="welcome" class="z-depth-4"></span>
+  </div>
 <div id="scroll-container" class="scroll-container">
+  
     <section id="step0" class="step">
       <div>
         <h3>Pride N Joy</h3>
@@ -56,7 +62,8 @@
   </div>
   <!-- end -->
   <!-- navigation -->
-  <div class="layout">  
+
+  <div class="layout">
     <div class="common-left-text undefined">
       <div><p class="title scroll-revealInRight revealInRight d1 ">Pride N Joy Web3</p>
         <p class="text scroll-revealInRight revealInRight d2">
@@ -92,6 +99,8 @@
 
   </div>
 <!-- javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
 ></script>
 
